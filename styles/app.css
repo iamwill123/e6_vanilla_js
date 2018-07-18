@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/**
+ * Layout
+ */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 112.5%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40em;
+	width: 88%;
+}
+
+#app {
+  border: 1px solid whitesmoke;
+}
+
+#navbar .nav {
+  width: 100%;
+  background: whitesmoke;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.timer {
+  text-align: center;
+  padding: 20px;
+}
+
+#stopwatch {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.stopwatch_content button {
+  padding: 5px 15px;
+  border-radius: 10%;
+  cursor: pointer;
+}
