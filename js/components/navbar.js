@@ -7,7 +7,7 @@ const setup_navbar = () => {
   // Create the stopwatch
 	class Navbar extends Component {
     constructor(props) {
-      super(props);
+      super(props); // calling super() so that the correct prototype chain is established.
       this.state = {...props};
     }
     
@@ -18,14 +18,18 @@ const setup_navbar = () => {
           ${heading}
         </div>
       `;
-			return template;
-		}
+  		return template;
+  	}
+  	
+  	componentDidMount() {
+  	  console.log('navbar mounted', this);
+  	}
   }
 
   const INITIAL_STATE = {
     elem: '#navbar',
     data: {
-      heading: 'Welcome to my stopwatch bro.'
+      heading: 'Welcome.'
 		}
   };
 

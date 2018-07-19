@@ -18,7 +18,10 @@ const setup_stopwatch = () => {
       let app = document.getElementById('app');
       app.addEventListener('click', this.clickHandler, false);
     }
-
+    
+    componentDidMount() {
+  	  console.log('stopwatch mounted', this);
+  	}
     /**
      * Format the time in seconds into hours, minutes, and seconds
      * @param  {Number} time The time in seconds
@@ -101,6 +104,7 @@ const setup_stopwatch = () => {
       `;
 			return template;
 		}
+		
   }
 
   const INITIAL_STATE = {

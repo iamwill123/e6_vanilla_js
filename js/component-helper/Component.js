@@ -26,10 +26,15 @@ const Component = ((win, doc, log, si, ci, sto, loc) => {
         data: props.data || null,
         // template: props.template || null
       };
+      this.componentDidMount = this.componentDidMount.bind(this);
+      this.componentWillUnmount = this.componentWillUnmount.bind(this);
+      
+      doc.addEventListener('DOMContentLoaded', () => this.componentDidMount());
+      win.onbeforeunload = () => this.componentWillUnmount();
     }
-
+    
     // Add the `setState()` method
-		setState(props) {
+	  setState(props) {
       // Shallow merge new properties into state object
       for (var key in props) {
         if (props.hasOwnProperty(key)) {
@@ -97,6 +102,15 @@ const Component = ((win, doc, log, si, ci, sto, loc) => {
       // Return the _elem for use elsewhere
       return _elem;
     } // render
+    
+    // lifecycle methods
+    componentDidMount() {
+      
+    }
+    
+    componentWillUnmount() {
+      
+    }
 
   } // class Component
 
