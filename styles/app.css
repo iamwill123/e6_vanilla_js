@@ -43,3 +43,11 @@ body {
   border-radius: 10%;
   cursor: pointer;
 }
+
+.footer-wrapper {
+  width: 100%;
+  background: whitesmoke;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,8 +1,7 @@
 import Component from '../component-helper/Component.js';
-/**
- * Setup the stopwatch on page load
- */
+
 const setup_stopwatch = () => {
+  'use strict';
   let timer;
   // Create the stopwatch
 	class Stopwatch extends Component {

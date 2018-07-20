@@ -1,9 +1,7 @@
 import Component from '../component-helper/Component.js';
 
-/**
- * Setup the navbar on page load
- */
 const setup_navbar = () => {
+  'use strict';
   // Create the stopwatch
 	class Navbar extends Component {
     constructor(props) {
@@ -32,7 +30,8 @@ const setup_navbar = () => {
       heading: 'Welcome.'
 		}
   };
-
+  
+  // Define the new element
   let navbar = new Navbar(INITIAL_STATE);
   navbar.render();
 };
